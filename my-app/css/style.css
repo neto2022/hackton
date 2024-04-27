@@ -6,6 +6,20 @@ body {
   height: 100%;
 }
 
+.inner-map {
+  display: flex;
+  top: 0;
+  bottom: 0;
+  width: 90vw;
+  height: 100%;
+
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .map {
   display: flex;
   flex-direction: row-reverse;
@@ -77,4 +91,53 @@ div.body-content > .rio {
 .body-content > div {
   height: 100%;
   width: 100%;
+}
+
+/* Estilo do fundo do modal */
+.modal-background {
+  display: none; /* Inicialmente escondido */
+  position: fixed; /* Fixo na janela */
+  z-index: 1; /* Acima de tudo */
+  left: 0;
+  top: 0;
+  width: 100%; /* Largura total */
+  height: 100%; /* Altura total */
+  overflow: auto; /* Habilita o scroll se necessário */
+  background-color: rgb(0, 0, 0); /* Fundo preto */
+  background-color: rgba(0, 0, 0, 0.4); /* Fundo preto com opacidade */
+}
+
+/* Estilo do modal */
+.modal-content {
+  overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+  overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% do topo e centralizado */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 95%; /* 80% da largura */
+  word-wrap: break-word;
+  height: 90vh;
+}
+
+.map-text-river-inner,
+.map-text-fish-inner {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+}
+
+.map-text {
+  height: 10%;
+}
+
+.img-map {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  height: 80%;
 }
