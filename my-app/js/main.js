@@ -58,15 +58,46 @@ const map3 = new Map({
   })
 });
 
-/*// Obtenha o elemento pelo ID
-let elemento = document.getElementById('myDIV');
+const map4 = new Map({
+  target: 'map4',
+  layers: [
+    new TileLayer({
+      source: new OSM()
+    })
+  ],
+  view: new View({
+    center: olProj.fromLonLat([-61.1281163, -61.1281163]),
+    zoom: 20
+  })
+});
 
-// Adicione um ouvinte de eventos ao elemento
-elemento.addEventListener('click', function () {
-  let content = document.getElementById("content");
-  if (content.style.maxHeight) {
-    content.style.maxHeight = null;
-  } else {
-    content.style.maxHeight = content.scrollHeight + "px";
+// Pega o modal
+var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2");
+
+// Pega a div que abre o modal
+var div = document.getElementById("myDiv");
+var div2 = document.getElementById("myDiv2");
+
+// Quando o usuário clica na div, abre o modal 
+div.addEventListener('click', function () {
+  modal.style.display = "block";
+});
+
+div2.addEventListener('click', function () {
+  modal2.style.display = "block";
+});
+
+// Quando o usuário clica em qualquer lugar fora do modal, fecha ele
+window.addEventListener('click', function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-});*/
+});
+
+window.addEventListener('click', function (event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+});
+
