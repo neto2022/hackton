@@ -77,7 +77,7 @@ div.body-content > .rio,
 }
 
 .body-content {
-  border: 5px solid red;
+  border: 5px solid rgb(50, 45, 45);
   border-radius: 10px;
   height: 50vh;
   width: 80vw;
@@ -140,4 +140,18 @@ div.body-content > .rio {
   margin-top: 1rem;
   border-radius: 1rem;
   height: 80%;
+}
+
+.img-map-1{
+  margin-top: 1rem;
+  border-radius: 1rem;
+  height: 200%;
+}
+
+.img-map-2{
+  margin-top: 1rem;
+  border-radius: 1rem;
+  height: 10%;
+  width: 100%;
+
 }
